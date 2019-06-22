@@ -35,13 +35,19 @@ class News extends Component {
     componentWillUnmount() {
         console.log("componentWillUnmount");
     }
-
     render() {
-        const tranCode = "Tran Code : COBDV";
-        const customerNumber = "Customer : 1662939";
         return (
             <div>
-              <NewsItem tranCode = {tranCode} customerNumber = {customerNumber}/>
+               {
+                   this.props.news.map( item => <li>
+                                                      {
+                                                            <NewsItem tranCode = {item.tranCode}
+                                                                    customerNumber = {item.customerNumber}>
+                                                            </NewsItem>
+                                                      }
+                                                </li>
+                                      )
+                }
             </div>
         );
     }

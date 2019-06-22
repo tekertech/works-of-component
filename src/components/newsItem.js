@@ -12,8 +12,7 @@ class NewsItem extends React.Component {
         return(
              <div>
                 <p>{tranCode}</p>
-                <p>{customerNumber}</p>
-                Hello React
+                <p>{customerNumber}</p> 
              </div>
         )
     }
