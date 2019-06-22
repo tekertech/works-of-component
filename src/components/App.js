@@ -1,11 +1,11 @@
 import React from 'react'; 
-import './App.css';
-import NewsItem from './newsItem';
+import '../App.css';
+import News from './News';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <NewsItem/> 
+       <News ></News>
       </header>
     </div>
   );
