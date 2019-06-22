@@ -1,9 +1,18 @@
 import React from 'react'; 
 
 class NewsItem extends React.Component {
-    render(){
+    
+    constructor(props) {
+        super(props); 
+        console.log("constructor props : " + props);
+    }
+
+    render(){ 
+        const {tranCode, customerNumber} = this.props;  
         return(
              <div>
+                <p>{tranCode}</p>
+                <p>{customerNumber}</p>
                 Hello React
              </div>
         )

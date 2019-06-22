@@ -37,18 +37,18 @@ class News extends Component {
     }
 
     render() {
+        const tranCode = "Tran Code : COBDV";
+        const customerNumber = "Customer : 1662939";
         return (
             <div>
-              <NewsItem/>
-              <NewsItem/>
-              <NewsItem/>
+              <NewsItem tranCode = {tranCode} customerNumber = {customerNumber}/>
             </div>
         );
     }
 }
 
 News.propTypes = {
-
+  
 };
 
 export default News;
